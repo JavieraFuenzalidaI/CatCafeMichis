@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Productos – CatCafe Michis</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Oswald:wght@521&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+      <h1>CatCafe Michis</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Blogs.html">Blogs</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="productos-section">
+    <div class=productos-section-title>
+    <h2>PRODUCTOS</h2>
+    </div>
+
+    <div id="carrito-col">
+      <div id="carrito">
+        <h5>Carrito (<span id="contador">0</span>)</h5>
+        <ul id="carrito-lista"></ul>
+      </div>
+    </div>
+
+    <ul class="productos">
+        <li class="item">
+            <img src="img/postre1.jpg" alt=" Bocadito Galletita Frutal">
+            <h3 class="producto.title"><a href="productos/postre1.html">Bocadito de Galletita Frutal</a></h3>
+            <p class="price">$2.500</p>
+            <button class="btn-add" onclick="agregarAlCarrito('Postre 1', 2000, 'img/postre1.jpg')">Agregar al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/postre2.jpg" alt="Bocado Mousse Frutal">
+            <h3 class="producto.title"><a href="productos/postre2.html">Bocadito de Mousse Frutal</a></h3>
+            <p class="price">$2.500</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/postre3.jpg" alt="Mousse Chocolate y Crema">
+            <h3 class="producto.title"><a href="productos/postre3.html">Mousse Chocolate y Crema</a></h3>
+            <p class="price">$4.000</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/postre4.jpg" alt="Tartita de Arándanos Con Crema">
+            <h3 class="producto.title"><a href="productos/postre4.html">Tartita de Arándanos Con Crema</a></h3>
+            <p class="price">$4.000</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/postre5.jpg" alt="Flansito Bañado en Chocolate">
+            <h3 class="producto.title"><a href="productos/postre5.html">Flansito Bañado en Chocolate</a></h3>
+            <p class="price">$4.000</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/postre6.jpg" alt="Flansito de Chocolate y Frutillas">
+            <h3 class="producto.title"><a href="productos/postre6.html">Flansito de Chocolate y Frutillas</a></h3>
+            <p class="price">$4.000</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/postre7.jpg" alt="Tartita de Crema y Frutillas">
+            <h3 class="producto.title"><a href="productos/postre7.html">Tartita de Frutillas y Crema</a></h3>
+            <p class="price">$4.000</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/postre8.jpg" alt="Tartita de Limonsito y Gelatina">
+            <h3 class="producto.title"><a href="productos/postre8.html">Tartita de Limonsito y Gelatina</a></h3>
+            <p class="price">$4.000</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/wombocombo1.jpg" alt="Wombo Combo Chocolate">
+            <h3 class="producto.title"><a href="productos/wombocombo1.html">Wombo Combo de Chocolate</a></h3>
+            <p class="price">$8.500</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/wombocombo2.jpg" alt="Wombo Combo Vainillita">
+            <h3 class="producto.title"><a href="productos/wombocombo2.html">Wombo Combo de Vainillita</a></h3>
+            <p class="price">$8.500</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/wombocombo3.jpg" alt="Wombo Combo Frutillita">
+            <h3 class="producto.title"><a href="productos/wombocombo3.html">Wombo Combo de Frutillita</a></h3>
+            <p class="price">$8.500</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/wombocombo4.jpg" alt="Super Wombo Combo">
+            <h3 class="producto.title"><a href="productos/wombocombo4.html">Super Mega Wombo Combo</a></h3>
+            <p class="price">$10.000</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/bebida1.jpg" alt="aElección">
+            <h3 class="producto.title"><a href="productos/bebida1.html">Cafésitos Clásico a tu elección</a></h3>
+            <p class="price">$4.500</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/bebida2.jpg" alt="Jugos">
+            <h3 class="producto.title"><a href="productos/bebida2.html">Ricos y Refrescantes Juguitos Naturales</a></h3>
+            <p class="price">$3.500</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/bebida3.jpg" alt="Frappes">
+            <h3 class="producto.title"><a href="productos/bebida3.html">Frappecitos de tus sabores favoritos</a></h3>
+            <p class="price">$5.000</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+        <li class="item">
+            <img src="img/bebida4.jpg" alt="Chocolate Caliente">
+            <h3 class="producto.title"><a href="productos/bebida4.html"><strong>[Especial]</strong> Chocolate Calentito</a></h3>
+            <p class="price">$5.000</p>
+            <button class="btn-add">Añadir al carrito</button>
+        </li>
+    </ul>
+</section>
+
+
+  <footer class="footer">
+    <div class="footer-section">
+      <h3>Sobre Nosotros</h3>
+      <p>En "Michis", no solo somos un café, sino un santuario para los amantes de los gatos.</p>
+      <a href="Nosotros.html"><strong>Más Información!</strong></a>
+    </div>
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p><strong>Redes sociales:</strong> ¡Síguenos para no perderte ningún evento o promociones!</p>
+      <p><strong>Sucursales:</strong> Visítanos en nuestras sucursales de <a href=# strong>Providencia</strong></a>, <a href=# strong>Los Leones</strong></a> y <a href=# strong>La Cisterna</strong></a></p>
+      <p><strong>Apps:</strong> Pide tus favoritos desde tu casa con <strong>Rappi</strong> y <strong>Uber Eats</strong>.</p>
+    </div>
+    <div class="footer-section">
+      <img src="img/gatosFooter.jpg" alt="Gatitos Sentados">
+      <h3><strong>¡Visítanos!</strong></h3>
+    </div>
+  </footer>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

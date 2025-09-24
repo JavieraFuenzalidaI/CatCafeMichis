@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Producto ☕ CafCafe Michix</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+    <script src="../carrito.js"></script>
+</head>
+
+<body>
+  <header>
+      <h1>CatCafe Michis</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="../Inicio.html">Inicio</a></li>
+        <li><a href="../Productos.html">Productos</a></li>
+        <li><a href="../Nosotros.html">Nosotros</a></li>
+        <li><a href="../Blogs.html">Blogs</a></li>
+        <li><a href="../Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="carrito-col">
+      <div id="carrito">
+        <h5>Carrito (<span id="contador">0</span>)</h5>
+        <ul id="carrito-lista"></ul>
+      </div>
+  </div>
+
+<section class="postre">
+  <img src="../img/postre1.jpg">
+  <div class="texto">
+    <div class="titulo-precio-btn">
+      <h3 class="producto-title">Bocadito Galletita Frutal</h3>
+      <p class="price">$2.500</p>
+      <button class="btn-add" 
+              data-nombre="Bocadito Galletita Frutal" 
+              data-precio="$2.500">
+        Agregar al carrito
+      </button>
+    </div>
+    <p class="desc">
+      El Bocadito Galletita Frutal nació del deseo de capturar la esencia de una tarde de verano en un bocado. 
+      Este encantador postre combina una base crujiente de galleta que sostiene delicadas capas de crema suave y 
+      gelatina de vibrantes frutas. Inspirado en la frescura y colores de un jardín en flor, se completa con una 
+      corona de frutas frescas: fresas, frambuesas, arándanos y uvas.
+    </p>
+  </div>
+</section>
+<footer class="footer">
+    <div class="footer-section">
+      <h3>Sobre Nosotros</h3>
+      <p>En "Michis", no solo somos un café, sino un santuario para los amantes de los gatos.</p>
+      <a href="../Nosotros.html"><strong>Más Información!</strong></a>
+    </div>
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p><strong>Redes sociales:</strong> ¡Síguenos para no perderte ningún evento o promociones!</p>
+      <p><strong>Sucursales:</strong> Visítanos en nuestras sucursales de <a href=#> <strong>Providencia</strong></a>, <a href=#><strong>Los Leones</strong></a> y <a href=#><strong>La Cisterna</strong></a></p>
+      <p><strong>Apps:</strong> Pide tus favoritos desde tu casa con <strong>Rappi</strong> y <strong>Uber Eats</strong>.</p>
+    </div>
+    <div class="footer-section">
+      <img src="../img/gatosFooter.jpg" alt="Gatitos Sentados">
+      <h3><strong>¡Visítanos!</strong></h3>
+    </div>
+  </footer>
+
+  <script src="../js/carrito.js"></script>
+</body>
+</html>

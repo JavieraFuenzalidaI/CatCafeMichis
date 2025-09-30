@@ -21,7 +21,6 @@ const formLogin = document.getElementById('loginForm');
 
       if (usuario.contrasena === contrasena) {
           alert("✅ Bienvenido " + usuario.nombre);
-          localStorage.setItem('usuarioLogueado', JSON.stringify(usuario));
 
           // Verificar si el correo termina en @duoc.cl o @profesor.duoc.cl
           if (
@@ -29,10 +28,10 @@ const formLogin = document.getElementById('loginForm');
             usuario.correo.endsWith('@profesor.duoc.cl')
             ) {
             // Redirige a la página del administrador
-            window.location.href = "InicioAdmin.html";
+            window.location.href = "../admin/InicioAdmin.html";
           } else if (usuario.correo.endsWith('@gmail.com')){
             // Redirige a la página de usuario normal
-            window.location.href = "Inicio.html";
+            window.location.href = "../Inicio.html";
           }
 
       } else {
